@@ -73,15 +73,15 @@ public class SpotifyArtistsController {
                         item.getName(),
                         item.getPopularity(),
                         item.getExternalUrls().getSpotify(),
-                        item.getAlbum().getName(),
-                        item.getAlbum().getImages().get(0).getUrl(),
+                        //item.getAlbum().getName(),
+                        //item.getAlbum().getImages().get(0).getUrl(),
                         item.getUri()
                 )).collect(Collectors.toList());
 
         return mapperRecommendations;
     }
 
-    @GetMapping("/relatedArtist/{artist}")
+    @GetMapping("/relatedArtists/{artist}")
     public List<MapperRelatedArtist> relatedArtists(OAuth2Authentication details, @PathVariable String artist, SpotifyTracksController spotifyTracksController, Mappers mappers) {
 
         MapperTracks idArtistSource = spotifyTracksController.tracks(details, artist).get(0);
@@ -103,8 +103,8 @@ public class SpotifyArtistsController {
                         artist1.getId(),
                         artist1.getName(),
                         artist1.getPopularity(),
-                        artist1.getExternalUrls().getSpotify(),
-                        artist1.getImages().get(0).getUrl()
+                        artist1.getExternalUrls().getSpotify()/*,
+                        artist1.getImages().get(0).getUrl()*/
                 )).collect(Collectors.toList());
 
         return mapperRelatedArtist;

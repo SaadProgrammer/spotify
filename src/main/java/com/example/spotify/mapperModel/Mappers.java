@@ -32,10 +32,10 @@ public class Mappers {
         String artistName = mapperTracks.getArtistName();
         Integer trackPopularity = mapperTracks.getTrackPopularity();
         String listen = mapperTracks.getListen();
-        String albumName = mapperTracks.getAlbumName();
-        String albumImageUrl = mapperTracks.getAlbumImageUrl();
+        //String albumName = mapperTracks.getAlbumName();
+        //String albumImageUrl = mapperTracks.getAlbumImageUrl();
         String uri = mapperTracks.getUri();
-        return new MapperRecommendations(idTrack, trackName, idArtist, artistName, trackPopularity, listen, albumName, albumImageUrl, uri);
+        return new MapperRecommendations(idTrack, trackName, idArtist, artistName, trackPopularity, listen, /*albumName, albumImageUrl,*/ uri);
     }
 
 }

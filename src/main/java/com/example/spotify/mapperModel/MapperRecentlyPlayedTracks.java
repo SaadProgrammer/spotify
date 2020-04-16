@@ -16,7 +16,7 @@ public class MapperRecentlyPlayedTracks {
     private String trackName;
     private Integer trackPopularity;
     private String listen;
-    private String albumName;
-    private String albumImageUrl;
+    //private String albumName;
+    //private String albumImageUrl;
     private String uri;
 }

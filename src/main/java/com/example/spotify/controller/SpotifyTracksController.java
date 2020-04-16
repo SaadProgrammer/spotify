@@ -71,8 +71,8 @@ public class SpotifyTracksController {
                         item.getTrack().getName(),
                         item.getTrack().getPopularity(),
                         item.getTrack().getExternalUrls().getSpotify(),
-                        item.getTrack().getAlbum().getName(),
-                        item.getTrack().getAlbum().getImages().get(0).getUrl(),
+                        //item.getTrack().getAlbum().getName(),
+                        //item.getTrack().getAlbum().getImages().get(0).getUrl(),
                         item.getTrack().getUri()
                 )).collect(Collectors.toList());
 
@@ -101,8 +101,8 @@ public class SpotifyTracksController {
                         item.getName(),
                         item.getPopularity(),
                         item.getExternalUrls().getSpotify(),
-                        item.getAlbum().getName(),
-                        item.getAlbum().getImages().get(0).getUrl(),
+                        //item.getAlbum().getName(),
+                        //item.getAlbum().getImages().get(0).getUrl(),
                         item.getUri()
                 )).collect(Collectors.toList());
 
@@ -131,8 +131,8 @@ public class SpotifyTracksController {
                         item.getArtists().get(0).getName(),
                         item.getPopularity(),
                         item.getExternalUrls().getSpotify(),
-                        item.getAlbum().getName(),
-                        item.getAlbum().getImages().get(0).getUrl(),
+                        //item.getAlbum().getName(),
+                        //item.getAlbum().getImages().get(0).getUrl(),
                         item.getUri()
                 )).collect(Collectors.toList());
 

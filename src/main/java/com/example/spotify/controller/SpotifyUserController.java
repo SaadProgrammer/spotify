@@ -42,8 +42,8 @@ public class SpotifyUserController {
         for (MapperRecommendations track : tracksForPlaylist
                 ) {
             System.out.println("--");
-            System.out.println(track.getArtistName());
-            System.out.println(track.getAlbumName());
+            System.out.println("Tracks name: " + track.getTrackName());
+            System.out.println("Artists name: " + track.getArtistName());
         }
     }
 
@@ -68,9 +68,9 @@ public class SpotifyUserController {
 
         for (MapperRecommendations track : tracksForPlaylist
                 ) {
-            System.out.println("----");
-            System.out.println(track.getArtistName());
-            System.out.println(track.getAlbumName());
+            System.out.println("--");
+            System.out.println("Tracks name: " + track.getTrackName());
+            System.out.println("Artists name: " + track.getArtistName());
         }
     }
 
@@ -97,9 +97,9 @@ public class SpotifyUserController {
 
         for (MapperRecommendations track : tracksForPlaylist
                 ) {
-            System.out.println("----");
-            System.out.println(track.getArtistName());
-            System.out.println(track.getAlbumName());
+            System.out.println("--");
+            System.out.println("Tracks name: " + track.getTrackName());
+            System.out.println("Artists name: " + track.getArtistName());
         }
     }
 

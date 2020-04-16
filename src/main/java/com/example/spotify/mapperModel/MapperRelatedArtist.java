@@ -14,6 +14,6 @@ public class MapperRelatedArtist {
     private String artistName;
     private Integer artistPopularity;
     private String spotify;
-    private String albumImageUrl;
+    //private String albumImageUrl;
 
 }

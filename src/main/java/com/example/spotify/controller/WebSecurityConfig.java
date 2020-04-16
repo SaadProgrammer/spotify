@@ -20,7 +20,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests().antMatchers("/usersTopArtists").authenticated();
         http.authorizeRequests().antMatchers("/recommendations/{artist}").authenticated();
-        http.authorizeRequests().antMatchers("/relatedArtist/{artist}").authenticated();
+        http.authorizeRequests().antMatchers("/relatedArtists/{artist}").authenticated();
         http.authorizeRequests().antMatchers("/artist/{idTrack}").authenticated();
 
         http.authorizeRequests().antMatchers("/recentlyPlayedTracks").authenticated();
@@ -31,8 +31,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("/usersTopTracksRecommendation").authenticated();
         http.authorizeRequests().antMatchers("/usersTopArtistsRecommendation").authenticated();
         http.authorizeRequests().antMatchers("/usersRecentlyPlayedTracksRecommendation").authenticated();
-
-        //test
     }
 
 }
